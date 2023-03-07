@@ -19,10 +19,24 @@ class Player:
     Name: str
     Age: int
     Team: str
+    Shoesize:int = 0
+    __test: int
 
+
+# Om man har publika variabler som man inte vill ha med vid skapandet?
+#
 foppa = Player("Peter Forsberg",21,"Colorado")
 mats = Player("Mats Sundin",13,"Toronto")
 foppa.Name = "Foppa"
+
+
+
+# None
+team = []
+team.append(foppa)
+team.append(mats)
+for p in team:
+    print(p.Name)
 
 
 
